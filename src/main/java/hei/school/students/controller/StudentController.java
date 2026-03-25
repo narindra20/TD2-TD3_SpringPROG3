@@ -17,7 +17,7 @@ public class StudentController {
         this.studentService = studentService;
     }
 
-    // GET /welcome
+    // GET /welcome(path)
     @GetMapping("/welcome")
     public ResponseEntity<String> welcome(@RequestParam(required = false) String name) {
         if (name == null || name.isEmpty()) {
